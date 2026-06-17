@@ -21,6 +21,8 @@ pbo-pert-13/
 │   └── FormNilaiMhs.java
 ├── lib/
 │   └── mysql-connector-j-8.0.33.jar
+├── screenshots/
+│   └── sc1.png
 ├── schema.sql
 └── README.md
 ```
@@ -48,3 +50,7 @@ pbo-pert-13/
      ```bash
      java -cp "bin;lib/mysql-connector-j-8.0.33.jar" Main
      ```
+
+## Screenshot Aplikasi
+
+![Form Penilaian Mahasiswa](screenshots/sc1.png)
