@@ -77,16 +77,13 @@ public class FormNilaiMhs extends JFrame {
         txtTugas = createStyledTextField();
         
         txtNilaiAkhir = createStyledTextField();
-        txtNilaiAkhir.setEditable(false);
-        txtNilaiAkhir.setBackground(new Color(240, 242, 245));
+        txtNilaiAkhir.setEnabled(false);
         
         txtNilaiHuruf = createStyledTextField();
-        txtNilaiHuruf.setEditable(false);
-        txtNilaiHuruf.setBackground(new Color(240, 242, 245));
+        txtNilaiHuruf.setEnabled(false);
         
         txtPredikat = createStyledTextField();
-        txtPredikat.setEditable(false);
-        txtPredikat.setBackground(new Color(240, 242, 245));
+        txtPredikat.setEnabled(false);
         
         addFormRow(formPanel, "NIM:", txtNim, gbc, 0);
         addFormRow(formPanel, "Nama Mahasiswa:", txtNama, gbc, 1);
@@ -212,6 +209,8 @@ public class FormNilaiMhs extends JFrame {
         button.setFont(new Font("Segoe UI", Font.BOLD, 13));
         button.setBackground(bg);
         button.setForeground(Color.WHITE);
+        button.setContentAreaFilled(false);
+        button.setOpaque(true);
         button.setFocusPainted(false);
         button.setBorder(BorderFactory.createEmptyBorder(10, 15, 10, 15));
         button.setCursor(new Cursor(Cursor.HAND_CURSOR));
