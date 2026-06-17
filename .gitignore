@@ -1,0 +1,42 @@
+# Ignore compiled class files
+*.class
+bin/
+build/
+dist/
+
+# Ignore NetBeans IDE metadata
+nbproject/
+nb-configuration.xml
+nbactions.xml
+
+# Ignore Eclipse metadata
+.metadata/
+.classpath
+.project
+.settings/
+
+# Ignore IntelliJ IDEA metadata
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Ignore VS Code configuration
+.vscode/
+
+# Ignore temporary and log files
+*.log
+tmp/
+temp/
+
+# Ignore OS-specific files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+#
+*.pdf
+*.txt
+*.md
+!README.md
+
