@@ -19,6 +19,8 @@ pbo-pert-13/
 │   ├── DBConnection.java
 │   ├── Mhs.java
 │   └── FormNilaiMhs.java
+├── lib/
+│   └── mysql-connector-j-8.0.33.jar
 ├── schema.sql
 └── README.md
 ```
@@ -36,14 +38,13 @@ pbo-pert-13/
    - Buat database `pbo` dan impor tabel `mhs` menggunakan file [schema.sql](schema.sql).
 
 2. **Kompilasi**:
-   - Pastikan driver JDBC MySQL berada di classpath Anda.
    - Jalankan perintah kompilasi:
      ```bash
-     javac -cp ".;path/to/mysql-connector-java.jar" src/*.java -d bin
+     javac -cp ".;lib/mysql-connector-j-8.0.33.jar" src/*.java -d bin
      ```
 
 3. **Menjalankan Program**:
    - Jalankan program menggunakan kelas `Main`:
      ```bash
-     java -cp "bin;path/to/mysql-connector-java.jar" Main
+     java -cp "bin;lib/mysql-connector-j-8.0.33.jar" Main
      ```
