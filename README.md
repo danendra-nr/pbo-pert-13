@@ -20,7 +20,6 @@ pbo-pert-13/
 │   ├── Mhs.java
 │   └── FormNilaiMhs.java
 ├── schema.sql
-├── Optimasi.md
 └── README.md
 ```
 
